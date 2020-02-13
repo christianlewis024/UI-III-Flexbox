@@ -1,0 +1,379 @@
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6, */
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+/* img, */
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  /* margin: 0; */
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: flex;
+}
+body {
+  line-height: 1;
+  margin: 2%;
+}
+/* ol,
+ul {
+  list-style: none;
+} */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*/
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+nav {
+  display: flex;
+  flex-direction: row;
+
+  color: white;
+  width: 98%;
+  /* margin: 0 1%; */
+  position: fixed;
+  top: 60px;
+}
+header img {
+  display: flex;
+  align-items: stretch;
+  margin-right: 0;
+  background-color: white;
+}
+
+nav a {
+  display: flex;
+  width: 15%;
+  background-color: rgba(0, 0, 0, 0.473);
+  justify-content: space-evenly;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+.services-header-img {
+  height: 260px;
+  width: 100%;
+  outline: 10px dotted green;
+  border: none;
+}
+
+.services h2 {
+  font-size: 36px;
+}
+
+.services p {
+  font-size: 18px;
+}
+
+#theSix {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* the six boxes  */
+
+.digitalDesign p,
+.uxUi p,
+.digitalMarketing p,
+.webDevelopment p {
+  margin-left: 3%;
+}
+
+.digitalDesign h3,
+.webDevelopment h3,
+.digitalMarketing h3,
+.uxUi h3 {
+  margin-left: 45%;
+}
+
+.digitalDesign {
+  display: flex;
+  width: 46%;
+  border: yellow solid 1px;
+  background-color: rgb(192, 190, 190);
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.uxUi {
+  display: flex;
+  width: 46%;
+  border: yellow solid 1px;
+  background-color: rgb(192, 190, 190);
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.digitalMarketing {
+  display: flex;
+  width: 46%;
+  border: yellow solid 1px;
+  background-color: rgb(192, 190, 190);
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.webDevelopment {
+  display: flex;
+  width: 46%;
+  border: yellow solid 1px;
+  background-color: rgb(192, 190, 190);
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.iosDevelopment {
+  display: flex;
+  width: 100%;
+  border: yellow solid 1px;
+  background-color: rgb(192, 190, 190);
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.iosDevelopment img {
+  width: 50%;
+  margin-left: 25%;
+}
+.iosDevelopment h3 {
+  margin-left: 45%;
+  font-size: 45px;
+}
+.iosDevelopment p {
+  font-size: 30px;
+}
+
+.androidDevelopment {
+  display: flex;
+
+  display: flex;
+  width: 100%;
+  border: yellow solid 1px;
+  background-color: rgb(192, 190, 190);
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.androidDevelopment img {
+  width: 50%;
+  margin-left: 25%;
+}
+.androidDevelopment h3 {
+  font-size: 45px;
+  margin-left: 40%;
+}
+.androidDevelopment p {
+  font-size: 30px;
+}
+
+#theSix button {
+  margin-left: 40%;
+  width: 20%;
+  padding: 1.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: yellow solid 1px;
+  border-radius: 6px;
+}
+
+.someFacts {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  line-height: 1.2em;
+  margin-top: 3%;
+}
+.someFacts p {
+  width: 90%;
+}
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  line-height: 2.2em;
+  list-style-type: square;
+}
+.services-info-img {
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
+}
+
+.someFactsList {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+button:hover {
+  transition: 0.6s ease;
+  outline: yellow dotted 5px;
+  background-color: yellow;
+  text-transform: uppercase;
+}
+
+img {
+  outline: yellow 10px solid;
+}
